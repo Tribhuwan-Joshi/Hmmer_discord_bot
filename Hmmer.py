@@ -1,4 +1,6 @@
 import discord
+from keep_server import keep_alive
+
 import os
 from replit import db
 import requests
@@ -92,5 +94,5 @@ async def on_message(message):
     
 
 
-
+keep_alive()
 client.run(my_secret)
